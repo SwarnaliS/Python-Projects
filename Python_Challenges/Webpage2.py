@@ -14,7 +14,7 @@ def web_browser():
             </html>""" % txt
     f.write( message )
     f.close()
-    webbrowser.open_new_tab("file:///C:/Users/Swarnali/Desktop/Tech_Academy_Github/Python-Projects/Python_Challenges/new.html")
+    webbrowser.open_new_tab("new.html")
 
 
 
