@@ -40,12 +40,13 @@ conn.close()
 conn = sqlite3.connect('mydb.db')
 with conn:
     cur = conn.cursor()
-    cur.execute ('SELECT file_name,file_type FROM tbl_file WHERE file_type =".txt"')
+    cur.execute ('SELECT file_name,file_type  FROM tbl_file WHERE file_type =".txt"')
     varfile = cur.fetchall()
     for i in varfile:
-        msg = 'These are the .txt files: {} {}'.format(i[0],i[1])
-        print (msg)
-        conn.commit()
+        msg = 'These are the text files: {} {}'.format(i[0],i[1])
+    print (msg)
+    
+    conn.commit()
 conn.close()
 
    
