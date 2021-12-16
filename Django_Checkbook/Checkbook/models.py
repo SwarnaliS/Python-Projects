@@ -20,3 +20,4 @@ class Transaction(models.Model):
     account = models.ForeignKey(Account, on_delete= models.CASCADE)
 
     Transaction = models.Manager()
+
